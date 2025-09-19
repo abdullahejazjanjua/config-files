@@ -1,0 +1,67 @@
+{
+  "theme": "Catppuccin Mocha",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "disable_ai": true,
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticMode": "off",
+          "typeCheckingMode": "off"
+        }
+      }
+    },
+    "basedpyright": {
+      "settings": {
+        "python.analysis": {
+          // "diagnosticMode": "off",
+          "typeCheckingMode": "off"
+        }
+      }
+    },
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lint": {
+            "enable": false
+          }
+        }
+      }
+    },
+    "clang": {
+      "binary": {
+        "arguments": ["--header-insertion=never"]
+      }
+    }
+  },
+  "auto_install_extensions": {
+    "dart": true,
+    "git-firefly": true,
+    "ruff": true,
+    "xcode-themes": true,
+    "toml": true
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "minimap": {
+    "show": "always",
+    "thumb": "always",
+    "thumb_border": "left_open",
+    "current_line_highlight": null
+  },
+  "scrollbar": {
+    "show": "never"
+  }
+  // "ui_font_family": "Hack Nerd Font Propo",
+  // "buffer_font_family": "Hack Nerd Font Propo",
+  // "terminal": {
+  //   "dock": "bottom",
+  //   "font_family": "Hack Nerd Font Propo"
+  // }
+}
