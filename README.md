@@ -1,11 +1,11 @@
-# My Development Environment
+# Introduction
 
-Personal configuration files for my development setup.
+This repository contains personal configuration files for my text editors. This mainly serves as a backup incase I deleted my config files.
 
 ## Contents
 
-- `.vimrc` - Vim configuration with plugins for development
-- `.zed` - Zed configuration file for development
+- `vim/` - Vim configuration file with plugins.
+- `zed/` - Zed configuration files.
 
 ## Vim Setup
 
@@ -30,11 +30,11 @@ Personal configuration files for my development setup.
 mv ~/.vimrc ~/.vimrc.backup
 
 # Copy configuration
-cp .vimrc ~/.vimrc
+cp vim/.vimrc ~/.vimrc
 
 # Install vim-plug (if not already installed)
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Install plugins
-vim +PlugInstall +qall
+# Open vim, and write this after pressing `ESC`
+:PlugInstall
